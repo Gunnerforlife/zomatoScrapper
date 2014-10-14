@@ -86,36 +86,52 @@ def get_user_link(link):
     return 0
 
 
-def add_rest_db():
-    for temp1 in rest_links:
-        for link in temp1:
-            response = requests.get(link)
-            soup = bs4.BeautifulSoup(response.text)
-            name = soup.find_all('span', {'itemprop':'name'})[0].text
-            address_raw = soup.find_all('h2', {'itemprop': 'address'})[0].text
-            address = address_raw.strip()
-            cuisines = soup.find_all('a', {'itemprop':'servesCuisine'})
-            num = link.rfind('/')
-            uid = link[num+1:]
-            print name, address, uid
-            for cuisine in cuisines:
-                 print cuisine.text
-
-            try:
-                cur.execute("SELECT * FROM restaurants WHERE uid = %s", (uid,))
-                if cur.fetchall() != []:
-                    print 'data already exists'
-                else:
-                    print 'inserting data'
-                    cur.execute("INSERT INTO restaurants (name, address,uid) VALUES (%s, %s, %s)", (name, address, uid,))
-
-            except psycopg2.DatabaseError, e:
-                if con:
-                    con.rollback()
-                print 'Error %s' % e
-                sys.exit(1)
-            finally:
-                con.commit()
+def add_rest_db(link):
+        response = requests.get(link)
+        soup = bs4.BeautifulSoup(response.text)
+        name = soup.find_all('span', {'itemprop':'name'})[0].text
+        address_raw = soup.find_all('h2', {'itemprop': 'address'})[0].text
+        address = address_raw.strip()
+        cuisines = soup.find_all('a', {'itemprop':'servesCuisine'})
+        num = link.rfind('/')
+        uid = link[num+1:]
+        print name, address, uid
+        cuisine_str = ''
+        for i in range(0, len(cuisines)):
+            if i == len(cuisines)-1:
+                print cuisines[i].text
+                cuisine_str = cuisine_str + cuisines[i].text
+            else:
+                print cuisines[i].text
+                cuisine_str = cuisine_str + cuisines[i].text + ','
+        print cuisine_str
+        votes_count_str = soup.find('span', {'itemprop':'ratingCount'}).text
+        votes_count = int(votes_count_str)
+        print votes_count
+        votes_value_str_raw = soup.find('div', {'itemprop':'ratingValue'}).text
+        votes_value_str = votes_value_str_raw.strip()
+        votes_value = float(votes_value_str)
+        print votes_value
+        print type(votes_value)
+        stats = soup.find_all('div', {'class':'res-main-stats-num'})
+        review_num = int(stats[0].text)
+        bookmark_num = int(stats[2].text)
+        checkins_num = int(stats[3].text)
+        print review_num, bookmark_num, checkins_num, type(review_num), type(bookmark_num), type(checkins_num)
+        try:
+            cur.execute("SELECT * FROM restaurants WHERE uid = %s", (uid,))
+            if cur.fetchall() != []:
+                print 'data already exists'
+            else:
+                print 'inserting data'
+                cur.execute("INSERT INTO restaurants (name, address,uid,votes_cnt,rating,review_cnt,book_cnt,checkin_cnt,cuisines) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",(name, address, uid, votes_count, votes_value, review_num, bookmark_num, checkins_num, cuisine_str))
+        except psycopg2.DatabaseError, e:
+            if con:
+                con.rollback()
+            print 'Error %s' % e
+            sys.exit(1)
+        finally:
+            con.commit()
 
 
 def add_user_db(link):
@@ -136,6 +152,21 @@ def add_user_db(link):
 
     num = link.rfind('/')
     uid = link[num+1:]
+    foodie_lvl_str = soup.find('span', {'class':'user-stats_rank'}).text
+    print foodie_lvl_str
+    foodie_lvl = int(foodie_lvl_str)
+    review_cnt_str = soup.find('a', {'data-tab':'reviews'}).text
+    ind_strt = review_cnt_str.find('(')
+    ind_end = review_cnt_str.rfind(')')
+    review_str =review_cnt_str[ind_strt+1:ind_end]
+    print review_str
+    review = int(review_str)
+    follower_cnt_str = soup.find('a', {'data-tab':'network'}).text
+    ind_strt = follower_cnt_str.find('(')
+    ind_end = follower_cnt_str.rfind(')')
+    follower_str =follower_cnt_str[ind_strt+1:ind_end]
+    print follower_str
+    follower = int(follower_str)
     print name, bio, location, uid
 
     try:
@@ -144,7 +175,7 @@ def add_user_db(link):
             print 'data already exists'
         else:
             print 'inserting data'
-            cur.execute("INSERT INTO users (name, bio, uid, address) VALUES (%s, %s, %s, %s)", (name, bio, uid, location))
+            cur.execute("INSERT INTO users (name, bio, uid, address, review, foodie_lvl, follower) VALUES (%s, %s, %s, %s,%s,%s,%s)", (name, bio, uid, location, review, foodie_lvl, follower))
 
     except psycopg2.DatabaseError, e:
         if con:
@@ -221,7 +252,7 @@ def add_reviews_db(main_link):
 
 
 
-add_reviews_db('https://www.zomato.com/ahmedabad/barbeque-nation-gurukul')
+#add_reviews_db('https://www.zomato.com/ahmedabad/barbeque-nation-gurukul')
 #rest_pages('https://www.zomato.com/ahmedabad/gurukul-restaurants')
 #print rest_links
 
@@ -234,7 +265,8 @@ add_reviews_db('https://www.zomato.com/ahmedabad/barbeque-nation-gurukul')
 # for a in user_links:
 #     add_user_db(a)
 
-# add_rest_db()
+add_user_db('https://www.zomato.com/eshan')
+#add_rest_db('https://www.zomato.com/ahmedabad/global-desi-tadkaa-satellite')
 #get_rest_link('https://www.zomato.com/ahmedabad/satellite-restaurants')
 #get_user_link('https://www.zomato.com/ahmedabad/global-desi-tadkaa-satellite')
 #get_user_link('https://www.zomato.com/ahmedabad/global-desi-tadkaa-satellite')
