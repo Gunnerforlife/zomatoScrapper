@@ -85,6 +85,14 @@ def get_user_link(link):
     #obj = [a.attrs.get('href') for a in soup.select('.snippet__link')]
     return 0
 
+def get_review_num(value):
+    index = value.rfind('-')
+    num_str_raw = value[index+1:]
+    num_str = num_str_raw.strip()
+    num_raw = int(num_str)
+    switch_dict ={1:1.0,2:1.5,3:2.0,4:2.5,5:3.0,6:3.5,7:4.0,8:4.5,9:5.0}
+    num = switch_dict[num_raw]
+    return num
 
 def add_rest_db(link):
         response = requests.get(link)
@@ -192,12 +200,21 @@ def add_user_db(link):
 def add_reviews_db(main_link):
     user_uids = []
     reviews = []
+    ratings = []
     response = requests.get(main_link)
     soup = bs4.BeautifulSoup(response.text)
     review = soup.find_all('div', {'id':'reviews-container'})[0]
     names = review.find_all('div', {'class':'snippet-user--primary'})
     num = main_link.rfind('/')
     rest_uid = main_link[num+1:]
+    cur.execute("SELECT id FROM restaurants WHERE uid=%s", (rest_uid,))
+    #if cur.fetchone() == None:
+        #rest_id = 0
+   # else:
+       # rest_id = cur.fetchone()
+    print 'dude'
+    rest_id = cur.fetchone()[0]
+    print rest_id
     for name in names:
         head = name.find_all('div', {'class':'snippet__head'})
         for every in head:
@@ -215,6 +232,9 @@ def add_reviews_db(main_link):
             final_desc = desc.find_all('div', {'class':'rev-text'})
         i = i+1
         print i
+        rating_raw = final_desc[0].findAll('div')[1]['class'][4]
+        ratings.append(get_review_num(rating_raw))
+        print rating_raw
         temp = final_desc[0].findAll(text=True, recursive=False)
         final = unicode.join(u'\n', map(unicode, temp))
         #print temp
@@ -235,10 +255,11 @@ def add_reviews_db(main_link):
             if cur.fetchall() != []:
                 print 'data already exists'
             else:
+
                 print 'inserting data'
-                #print reviews[i]
-                #print "%s" %reviews[i]
-                cur.execute("INSERT INTO reviews (user_uid, rest_uid, review_text) VALUES (%s, %s,%s)", (user_uids[i], rest_uid, reviews[i],))
+                print reviews[i]
+                print "%s" %reviews[i]
+                cur.execute("INSERT INTO reviews (user_uid, rest_uid, review_text, rating) VALUES (%s, %s,%s,%s)", (user_uids[i], rest_uid, reviews[i], ratings[i],))
 
         except psycopg2.DatabaseError, e:
             if con:
@@ -251,8 +272,7 @@ def add_reviews_db(main_link):
 
 
 
-
-#add_reviews_db('https://www.zomato.com/ahmedabad/barbeque-nation-gurukul')
+add_reviews_db('https://www.zomato.com/ahmedabad/global-desi-tadkaa-satellite')
 #rest_pages('https://www.zomato.com/ahmedabad/gurukul-restaurants')
 #print rest_links
 
@@ -265,7 +285,7 @@ def add_reviews_db(main_link):
 # for a in user_links:
 #     add_user_db(a)
 
-add_user_db('https://www.zomato.com/eshan')
+#add_user_db('https://www.zomato.com/eshan')
 #add_rest_db('https://www.zomato.com/ahmedabad/global-desi-tadkaa-satellite')
 #get_rest_link('https://www.zomato.com/ahmedabad/satellite-restaurants')
 #get_user_link('https://www.zomato.com/ahmedabad/global-desi-tadkaa-satellite')
