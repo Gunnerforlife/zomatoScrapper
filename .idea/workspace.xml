@@ -29,17 +29,18 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42857143" vertical-offset="3609" max-vertical-offset="5328">
-              <caret line="216" column="28" selection-start-line="216" selection-start-column="28" selection-end-line="216" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.45541403" vertical-offset="4610" max-vertical-offset="5526">
+              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
               <folding>
-                <marker date="1413289070589" expanded="true" signature="3883:3921" placeholder="SELECT * FRO..restaurants..." />
-                <marker date="1413289070589" expanded="true" signature="4101:4238" placeholder="INSERT INTO ..." />
-                <marker date="1413289070589" expanded="true" signature="4340:9675" placeholder="INSERT INTO ..." />
-                <marker date="1413289070589" expanded="true" signature="5787:5819" placeholder="SELECT * FRO..users..." />
-                <marker date="1413289070589" expanded="true" signature="5979:6085" placeholder="INSERT INTO ..." />
-                <marker date="1413289070589" expanded="true" signature="6711:6748" placeholder="SELECT id FR..restaurants..." />
-                <marker date="1413289070589" expanded="true" signature="8322:8379" placeholder="SELECT * FRO..reviews..." />
-                <marker date="1413289070589" expanded="true" signature="8651:8734" placeholder="INSERT INTO ..." />
+                <element signature="e#24#39#0" expanded="true" />
+                <marker date="1413885257096" expanded="true" signature="3855:3893" placeholder="SELECT * FRO..restaurants..." />
+                <marker date="1413885257096" expanded="true" signature="4073:4210" placeholder="INSERT INTO ..." />
+                <marker date="1413885257096" expanded="true" signature="4312:9479" placeholder="INSERT INTO ..." />
+                <marker date="1413885257096" expanded="true" signature="5759:5791" placeholder="SELECT * FRO..users..." />
+                <marker date="1413885257096" expanded="true" signature="5951:6057" placeholder="INSERT INTO ..." />
+                <marker date="1413885257096" expanded="true" signature="6683:6720" placeholder="SELECT id FR..restaurants..." />
+                <marker date="1413885257096" expanded="true" signature="7943:8000" placeholder="SELECT * FRO..reviews..." />
+                <marker date="1413885257096" expanded="true" signature="8272:8355" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -60,9 +61,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="57" />
     <option name="y" value="-4" />
-    <option name="width" value="1301" />
+    <option name="width" value="1309" />
     <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -91,6 +92,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -111,11 +113,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../django_projects/temp" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
@@ -319,11 +320,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="false" />
+    <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24904507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -364,34 +365,72 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4392">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3762" max-vertical-offset="5328">
+          <caret line="214" column="13" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
           <folding>
-            <marker date="1413289070589" expanded="true" signature="3883:3921" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1413289070589" expanded="true" signature="4101:4238" placeholder="INSERT INTO ..." />
-            <marker date="1413289070589" expanded="true" signature="4340:9675" placeholder="INSERT INTO ..." />
-            <marker date="1413289070589" expanded="true" signature="5787:5819" placeholder="SELECT * FRO..users..." />
-            <marker date="1413289070589" expanded="true" signature="5979:6085" placeholder="INSERT INTO ..." />
-            <marker date="1413289070589" expanded="true" signature="6711:6748" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1413289070589" expanded="true" signature="8322:8379" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1413289070589" expanded="true" signature="8651:8734" placeholder="INSERT INTO ..." />
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1413885257096" expanded="true" signature="3855:3893" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="4073:4210" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="4312:9479" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="5759:5791" placeholder="SELECT * FRO..users..." />
+            <marker date="1413885257096" expanded="true" signature="5951:6057" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="6683:6720" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="7943:8000" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1413885257096" expanded="true" signature="8272:8355" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42857143" vertical-offset="3609" max-vertical-offset="5328">
-          <caret line="216" column="28" selection-start-line="216" selection-start-column="28" selection-end-line="216" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5328">
+          <caret line="216" column="17" selection-start-line="216" selection-start-column="17" selection-end-line="216" selection-end-column="17" />
           <folding>
-            <marker date="1413289070589" expanded="true" signature="3883:3921" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1413289070589" expanded="true" signature="4101:4238" placeholder="INSERT INTO ..." />
-            <marker date="1413289070589" expanded="true" signature="4340:9675" placeholder="INSERT INTO ..." />
-            <marker date="1413289070589" expanded="true" signature="5787:5819" placeholder="SELECT * FRO..users..." />
-            <marker date="1413289070589" expanded="true" signature="5979:6085" placeholder="INSERT INTO ..." />
-            <marker date="1413289070589" expanded="true" signature="6711:6748" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1413289070589" expanded="true" signature="8322:8379" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1413289070589" expanded="true" signature="8651:8734" placeholder="INSERT INTO ..." />
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1413885257096" expanded="true" signature="3855:3893" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="4073:4210" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="4312:9479" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="5759:5791" placeholder="SELECT * FRO..users..." />
+            <marker date="1413885257096" expanded="true" signature="5951:6057" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="6683:6720" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="7943:8000" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1413885257096" expanded="true" signature="8272:8355" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4392">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1413885257096" expanded="true" signature="3855:3893" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="4073:4210" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="4312:9479" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="5759:5791" placeholder="SELECT * FRO..users..." />
+            <marker date="1413885257096" expanded="true" signature="5951:6057" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="6683:6720" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="7943:8000" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1413885257096" expanded="true" signature="8272:8355" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45541403" vertical-offset="4610" max-vertical-offset="5526">
+          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1413885257096" expanded="true" signature="3855:3893" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="4073:4210" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="4312:9479" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="5759:5791" placeholder="SELECT * FRO..users..." />
+            <marker date="1413885257096" expanded="true" signature="5951:6057" placeholder="INSERT INTO ..." />
+            <marker date="1413885257096" expanded="true" signature="6683:6720" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1413885257096" expanded="true" signature="7943:8000" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1413885257096" expanded="true" signature="8272:8355" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

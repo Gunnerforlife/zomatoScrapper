@@ -4,8 +4,7 @@ import requests
 import bs4
 import psycopg2
 import sys
-import unicodedata
-import re
+
 
 root_url = 'https://www.zomato.com/'
 rest_links = []
@@ -225,7 +224,6 @@ def add_reviews_db(main_link):
             print user_uid
     descs = review.find_all('div', {'itemprop':'description'})
     i = 0
-    nothing = []
     for desc in descs:
         final_desc = desc.find_all('div', {'class':'rev-text hidden'})
         if final_desc == []:
@@ -241,13 +239,6 @@ def add_reviews_db(main_link):
         #print type(temp)
         print final
         print type(final)
-        # print (temp[1].get('text'))
-        # new_temp = unicodedata.normalize('NFKD', temp).encode('ascii', 'ignore')
-        # print type(new_temp)
-        # review_raw = new_temp.strip()
-        # print review_raw
-        # review_01 = re.sub(r'[ ]{2,}', "", review_raw)
-        # review_02 = re.sub(r"\r\n'", r"' '", review_01)
         reviews.append(final)
     for i in range(0, len(user_uids)):
         try:
@@ -272,15 +263,30 @@ def add_reviews_db(main_link):
 
 
 
-add_reviews_db('https://www.zomato.com/ahmedabad/global-desi-tadkaa-satellite')
+for place in get_places_link():
+    rest_pages(place)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        add_rest_db(link)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        get_user_link(link)
+
+for link in user_links:
+    add_user_db(link)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        add_reviews_db(link)
+
 #rest_pages('https://www.zomato.com/ahmedabad/gurukul-restaurants')
 #print rest_links
 
 #add_rest_db()
 
-# for link_obj in rest_links:
-#     for link in link_obj:
-#         get_user_link(link)
+
 # print user_links
 # for a in user_links:
 #     add_user_db(a)
