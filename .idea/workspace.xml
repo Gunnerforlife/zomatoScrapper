@@ -29,8 +29,8 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40127388" vertical-offset="126" max-vertical-offset="5796">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.65923566" vertical-offset="126" max-vertical-offset="5796">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="e#24#39#0" expanded="true" />
                 <marker date="1413912656323" expanded="true" signature="656:814" placeholder="CREATE TABLE..users..." />
@@ -646,8 +646,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40127388" vertical-offset="126" max-vertical-offset="5796">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.65923566" vertical-offset="126" max-vertical-offset="5796">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="e#24#39#0" expanded="true" />
             <marker date="1413912656323" expanded="true" signature="656:814" placeholder="CREATE TABLE..users..." />
