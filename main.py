@@ -13,7 +13,7 @@ user_links = []
 
 try:
     urlparse.uses_netloc.append("postgres")
-    url = urlparse.urlparse(os.environ["postgres://nseftsffiipaui:nI_tbMq8rT-RNiMK2nQMcW6V_8@ec2-54-243-47-196.compute-1.amazonaws.com:5432/d5qh7kh2g6f8qh"])
+    url = urlparse.urlparse(os.environ["DATABASE_URL"])
 
     con = psycopg2.connect(
         database=url.path[1:],
@@ -24,9 +24,9 @@ try:
     )
     #con = psycopg2.connect(database='mydb', user='persi52')
     cur = con.cursor()
-    cur.execute("CREATE TABLE users(id serial NOT NULL,name text,bio text,uid text,address text,review text,foodie_lvl text,follower text,CONSTRAINT users_pk PRIMARY KEY (id))")
-    cur.execute("CREATE TABLE restaurants(id serial NOT NULL,name text,address text,uid text,votes_cnt integer,rating double precision,review_cnt integer,book_cnt integer,checkin_cnt integer,cuisines text,CONSTRAINT rest_id PRIMARY KEY (id))")
-    cur.execute("CREATE TABLE reviews(id serial NOT NULL,user_uid text,rest_uid text,review_text text,rating double precision,CONSTRAINT rew_pk PRIMARY KEY (id))")
+    cur.execute("CREATE TABLE IF NOT EXISTS users(id serial NOT NULL,name text,bio text,uid text,address text,review text,foodie_lvl text,follower text,CONSTRAINT users_pk PRIMARY KEY (id))")
+    cur.execute("CREATE TABLE IF NOT EXISTS restaurants(id serial NOT NULL,name text,address text,uid text,votes_cnt integer,rating double precision,review_cnt integer,book_cnt integer,checkin_cnt integer,cuisines text,CONSTRAINT rest_id PRIMARY KEY (id))")
+    cur.execute("CREATE TABLE IF NOT EXISTS reviews(id serial NOT NULL,user_uid text,rest_uid text,review_text text,rating double precision,CONSTRAINT rew_pk PRIMARY KEY (id))")
     con.commit()
 except psycopg2.DatabaseError, e:
     if con:
@@ -278,23 +278,23 @@ def add_reviews_db(main_link):
 
 
 
-# for place in get_places_link():
-#     rest_pages(place)
-#
-# for link_obj in rest_links:
-#     for link in link_obj:
-#         add_rest_db(link)
-#
-# for link_obj in rest_links:
-#     for link in link_obj:
-#         get_user_link(link)
-#
-# for link in user_links:
-#     add_user_db(link)
-#
-# for link_obj in rest_links:
-#     for link in link_obj:
-#         add_reviews_db(link)
+for place in get_places_link():
+    rest_pages(place)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        add_rest_db(link)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        get_user_link(link)
+
+for link in user_links:
+    add_user_db(link)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        add_reviews_db(link)
 
 #rest_pages('https://www.zomato.com/ahmedabad/gurukul-restaurants')
 #print rest_links
