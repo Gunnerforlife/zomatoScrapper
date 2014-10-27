@@ -30,10 +30,15 @@ try:
     print con
     #con = psycopg2.connect(database='mydb', user='persi52')
     cur = con.cursor()
+    print 'got cursor'
     cur.execute("CREATE TABLE IF NOT EXISTS users(id serial NOT NULL,name text,bio text,uid text,address text,review text,foodie_lvl text,follower text,CONSTRAINT users_pk PRIMARY KEY (id))")
+    print 'created table users'
     cur.execute("CREATE TABLE IF NOT EXISTS restaurants(id serial NOT NULL,name text,address text,uid text,votes_cnt integer,rating double precision,review_cnt integer,book_cnt integer,checkin_cnt integer,cuisines text,CONSTRAINT rest_id PRIMARY KEY (id))")
+    print 'created table restaurants'
     cur.execute("CREATE TABLE IF NOT EXISTS reviews(id serial NOT NULL,user_uid text,rest_uid text,review_text text,rating double precision,CONSTRAINT rew_pk PRIMARY KEY (id))")
+    print 'created table reviews'
     con.commit()
+    print 'connection commit'
 except psycopg2.DatabaseError, e:
     if con:
         con.rollback()
