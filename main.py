@@ -128,7 +128,7 @@ def add_rest_db(link):
         cuisines = soup.find_all('a', {'itemprop':'servesCuisine'})
         num = link.rfind('/')
         uid = link[num+1:]
-        print name, address, uid
+        print name.unicode('utf-8'), address.unicode('utf-8'), uid.unicode('utf-8')
         cuisine_str = ''
         for i in range(0, len(cuisines)):
             if i == len(cuisines)-1:
@@ -200,7 +200,7 @@ def add_user_db(link):
     follower_str =follower_cnt_str[ind_strt+1:ind_end]
     print follower_str
     follower = int(follower_str)
-    print name, bio, location, uid
+    print name.unicode('utf-8'), bio.unicode('utf-8'), location.unicode('utf-8'), uid.unicode('utf-8')
 
     try:
         cur.execute("SELECT * FROM users WHERE uid = %s", (uid,))
