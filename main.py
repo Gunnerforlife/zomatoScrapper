@@ -8,7 +8,7 @@ import urlparse
 import os
 import logging
 
-root_url = 'https://www.zomato.com/'
+root_url = 'https://www.zomato.com/ahmedabad'
 rest_links = []
 user_links = []
 
