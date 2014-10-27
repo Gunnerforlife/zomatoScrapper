@@ -87,11 +87,8 @@ def rest_pages(link):
     print final
     for i in range(1, final+1):
         print i
-        if i > 2:
-            break
-        else:
-            new_link = link+'?page='+str(i)
-            get_rest_link(new_link)
+        new_link = link+'?page='+str(i)
+        get_rest_link(new_link)
     return 0
 
 
