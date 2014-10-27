@@ -14,11 +14,11 @@ user_links = []
 
 try:
     urlparse.uses_netloc.append("postgres")
-    logging.info('urlparse url')
+    print 'urlparse'
     #url = urlparse.urlparse(os.environ["DATABASE_URL"])
-    url = urlparse.urlparse("postgrexs://nseftsffiipaui:nI_tbMq8rT-RNiMK2nQMcW6V_8@ec2-54-243-47-196.compute-1.amazonaws.com:5432/d5qh7kh2g6f8qh")
-    logging.info('what is the url')
-    logging.info(url)
+    url = urlparse.urlparse("postgres://nseftsffiipaui:nI_tbMq8rT-RNiMK2nQMcW6V_8@ec2-54-243-47-196.compute-1.amazonaws.com:5432/d5qh7kh2g6f8qh")
+    print 'url of db'
+    print url
     con = psycopg2.connect(
         database=url.path[1:],
         user=url.username,

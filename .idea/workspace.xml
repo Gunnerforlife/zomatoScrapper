@@ -26,32 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="4890">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="4800">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
-                <element signature="e#24#39#0" expanded="true" />
-                <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-                <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-                <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-                <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-                <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-                <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-                <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-                <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-                <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-                <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+                <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+                <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+                <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+                <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+                <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+                <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+                <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+                <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+                <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+                <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
@@ -79,8 +78,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -116,7 +115,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,6 +135,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,20 +387,54 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4890">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4830">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -427,17 +460,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5796">
           <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -463,17 +495,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5796">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -491,17 +522,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5724">
           <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -519,17 +549,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3762" max-vertical-offset="5328">
           <caret line="214" column="13" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -539,17 +568,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5328">
           <caret line="216" column="17" selection-start-line="216" selection-start-column="17" selection-end-line="216" selection-end-column="17" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -559,17 +587,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4392">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -582,31 +609,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="4890">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#24#39#0" expanded="true" />
-            <marker date="1414396864096" expanded="true" signature="807:979" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="999:1237" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="1257:1415" placeholder="CREATE TABLE..IF..." />
-            <marker date="1414396864096" expanded="true" signature="5061:5099" placeholder="SELECT * FRO..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="5279:5416" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="6965:6997" placeholder="SELECT * FRO..users..." />
-            <marker date="1414396864096" expanded="true" signature="7157:7263" placeholder="INSERT INTO ..." />
-            <marker date="1414396864096" expanded="true" signature="7889:7926" placeholder="SELECT id FR..restaurants..." />
-            <marker date="1414396864096" expanded="true" signature="9149:9206" placeholder="SELECT * FRO..reviews..." />
-            <marker date="1414396864096" expanded="true" signature="9478:9561" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="4800">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <marker date="1414397858736" expanded="true" signature="772:944" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="964:1202" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="1222:1380" placeholder="CREATE TABLE..IF..." />
+            <marker date="1414397858736" expanded="true" signature="5026:5064" placeholder="SELECT * FRO..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="5244:5381" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="6930:6962" placeholder="SELECT * FRO..users..." />
+            <marker date="1414397858736" expanded="true" signature="7122:7228" placeholder="INSERT INTO ..." />
+            <marker date="1414397858736" expanded="true" signature="7854:7891" placeholder="SELECT id FR..restaurants..." />
+            <marker date="1414397858736" expanded="true" signature="9114:9171" placeholder="SELECT * FRO..reviews..." />
+            <marker date="1414397858736" expanded="true" signature="9443:9526" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
