@@ -26,6 +26,8 @@ try:
         host=url.hostname,
         port=url.port
     )
+    print 'connection'
+    print con
     #con = psycopg2.connect(database='mydb', user='persi52')
     cur = con.cursor()
     cur.execute("CREATE TABLE IF NOT EXISTS users(id serial NOT NULL,name text,bio text,uid text,address text,review text,foodie_lvl text,follower text,CONSTRAINT users_pk PRIMARY KEY (id))")
@@ -35,7 +37,7 @@ try:
 except psycopg2.DatabaseError, e:
     if con:
         con.rollback()
-    logging.error('Error %s' % e)
+    print 'Error %s' % e
     sys.exit(1)
 
 
