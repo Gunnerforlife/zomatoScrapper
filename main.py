@@ -6,6 +6,7 @@ import psycopg2
 import sys
 import urlparse
 import os
+import logging
 
 root_url = 'https://www.zomato.com/'
 rest_links = []
@@ -13,8 +14,11 @@ user_links = []
 
 try:
     urlparse.uses_netloc.append("postgres")
+    logging.info('urlparse url')
     #url = urlparse.urlparse(os.environ["DATABASE_URL"])
-    url = urlparse.urlparse("postgres://nseftsffiipaui:nI_tbMq8rT-RNiMK2nQMcW6V_8@ec2-54-243-47-196.compute-1.amazonaws.com:5432/d5qh7kh2g6f8qh")
+    url = urlparse.urlparse("postgrexs://nseftsffiipaui:nI_tbMq8rT-RNiMK2nQMcW6V_8@ec2-54-243-47-196.compute-1.amazonaws.com:5432/d5qh7kh2g6f8qh")
+    logging.info('what is the url')
+    logging.info(url)
     con = psycopg2.connect(
         database=url.path[1:],
         user=url.username,
@@ -31,7 +35,7 @@ try:
 except psycopg2.DatabaseError, e:
     if con:
         con.rollback()
-    print 'Error %s' % e
+    logging.error('Error %s' % e)
     sys.exit(1)
 
 
