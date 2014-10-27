@@ -289,23 +289,23 @@ def add_reviews_db(main_link):
 
 
 
-# for place in get_places_link():
-#     rest_pages(place)
-#
-# for link_obj in rest_links:
-#     for link in link_obj:
-#         add_rest_db(link)
-#
-# for link_obj in rest_links:
-#     for link in link_obj:
-#         get_user_link(link)
-#
-# for link in user_links:
-#     add_user_db(link)
-#
-# for link_obj in rest_links:
-#     for link in link_obj:
-#         add_reviews_db(link)
+for place in get_places_link():
+    rest_pages(place)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        add_rest_db(link)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        get_user_link(link)
+
+for link in user_links:
+    add_user_db(link)
+
+for link_obj in rest_links:
+    for link in link_obj:
+        add_reviews_db(link)
 
 #rest_pages('https://www.zomato.com/ahmedabad/gurukul-restaurants')
 #print rest_links
