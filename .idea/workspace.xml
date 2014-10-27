@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="4905">
+            <state vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="4905">
               <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding>
                 <marker date="1414399086368" expanded="true" signature="841:1013" placeholder="CREATE TABLE..IF..." />
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -78,8 +78,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -609,17 +609,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="4905">
+        <state vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="4905">
           <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding>
             <marker date="1414399086368" expanded="true" signature="841:1013" placeholder="CREATE TABLE..IF..." />
@@ -633,6 +625,14 @@
             <marker date="1414399086368" expanded="true" signature="9308:9365" placeholder="SELECT * FRO..reviews..." />
             <marker date="1414399086368" expanded="true" signature="9637:9720" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
